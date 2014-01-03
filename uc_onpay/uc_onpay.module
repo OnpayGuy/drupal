@@ -125,7 +125,7 @@ function uc_onpay_form_alter(&$form, &$form_state, $form_id)
 function uc_onpay_form($form, &$form_state, $order)
 {
     $form = array();
-    $form['#action'] = url('uc_onpay/pay', array('absolute' => true));
+	  $form['#action'] = url('uc_onpay/pay', array('absolute' => true));
     $form['submit'] = array(
       '#type' => 'submit',
       '#value' => t('Submit Order'), );
